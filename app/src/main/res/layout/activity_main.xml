@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/logo_image_view"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="320dp"
+        android:layout_height="62dp"
+        android:layout_alignTop="@id/logo_image_view"
+        android:layout_toEndOf="@id/logo_image_view"
+        android:layout_marginEnd="14dp"
+        android:background="@color/mysin"
+        android:padding="8dp"
+        android:text="Sinfonia de Viento"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp" />
+
+
+    <ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/logo_image_view"
+    android:layout_marginTop="8dp"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/blanco2"
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/blanco2"
+            android:id="@+id/instrument_card_view1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/silver"
+                >
+
+                <ImageView
+                    android:id="@+id/instrument_image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/clarinete" />
+
+                <TextView
+                    android:id="@+id/instrument_name1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clarinete"
+                    android:textColor="@color/mysin"
+                    android:textSize="28sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/instrument_description1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Un clarinete de ébano"
+                    android:textColor="@color/blanco2"
+                    android:textSize="18sp"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/instrument_price1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$7000.00"
+                    android:textColor="@color/black"
+                    android:background="@color/mysin"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/blanco2"
+            android:id="@+id/instrument_card_view2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/silver">
+
+                <ImageView
+                    android:id="@+id/instrument_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/flauta_dulce" />
+
+                <TextView
+                    android:id="@+id/instrument_name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Flauta Dulce"
+                    android:textColor="@color/mysin"
+                    android:textSize="28sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/instrument_description2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Una flauta dulce de marfil"
+                    android:textColor="@color/blanco2"
+                    android:textSize="18sp"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/instrument_price2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$500.00"
+                    android:textColor="@color/black"
+                    android:background="@color/mysin"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/blanco2"
+            android:id="@+id/instrument_card_view3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/silver">
+
+                <ImageView
+                    android:id="@+id/instrument_image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/flauta_transversal" />
+
+                <TextView
+                    android:id="@+id/instrument_name3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Flauta Transversal"
+                    android:textColor="@color/mysin"
+                    android:textSize="28sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/instrument_description3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Una flauta travesera de plata"
+                    android:textColor="@color/blanco2"
+                    android:textSize="18sp"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/instrument_price3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$3000.00"
+                    android:textColor="@color/black"
+                    android:background="@color/mysin"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/blanco2"
+            android:id="@+id/instrument_card_view4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/silver">
+
+                <ImageView
+                    android:id="@+id/instrument_image4"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/fogot" />
+
+                <TextView
+                    android:id="@+id/instrument_name4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fagot"
+                    android:textColor="@color/mysin"
+                    android:textSize="28sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/instrument_description4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Un fagot de madera de arce"
+                    android:textColor="@color/blanco2"
+                    android:textSize="18sp"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/instrument_price4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$15000.00"
+                    android:textColor="@color/black"
+                    android:background="@color/mysin"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/blanco2"
+            android:id="@+id/instrument_card_view5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/silver">
+
+                <ImageView
+                    android:id="@+id/instrument_image5"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/oboe" />
+
+                <TextView
+                    android:id="@+id/instrument_name5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Oboe"
+                    android:textColor="@color/mysin"
+                    android:textSize="28sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/instrument_description5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Un oboe de madera de granadillo"
+                    android:textColor="@color/blanco2"
+                    android:textSize="18sp"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/instrument_price5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$12000.00"
+                    android:textColor="@color/black"
+                    android:background="@color/mysin"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/blanco2"
+            android:id="@+id/instrument_card_view6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/silver">
+
+                <ImageView
+                    android:id="@+id/instrument_image6"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/saxofon_alto" />
+
+                <TextView
+                    android:id="@+id/instrument_name6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saxofon Alto"
+                    android:textColor="@color/mysin"
+                    android:textSize="28sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/instrument_description6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Un saxofón alto de latón color azul"
+                    android:textColor="@color/blanco2"
+                    android:textSize="18sp"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/instrument_price6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$10000.00"
+                    android:textColor="@color/black"
+                    android:background="@color/mysin"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:background="@color/blanco2"
+            android:id="@+id/instrument_card_view7"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/silver">
+
+                <ImageView
+                    android:id="@+id/instrument_image7"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/trombon" />
+
+                <TextView
+                    android:id="@+id/instrument_name7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trombon"
+                    android:textColor="@color/mysin"
+                    android:textSize="28sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/instrument_description7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Un trombón de bronce dorado"
+                    android:textColor="@color/blanco2"
+                    android:textSize="18sp"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/instrument_price7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7500.00"
+                    android:textColor="@color/black"
+                    android:background="@color/mysin"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:id="@+id/instrument_card_view8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/silver">
+
+                <ImageView
+                    android:id="@+id/instrument_image8"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/trompeta" />
+
+                <TextView
+                    android:id="@+id/instrument_name8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trompeta"
+                    android:textColor="@color/mysin"
+                    android:textSize="28sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/instrument_description8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Una trompeta de bronce dorado"
+                    android:textColor="@color/blanco2"
+                    android:textSize="18sp"
+                    android:layout_marginTop="4dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:id="@+id/instrument_price8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$5000.00"
+                    android:textColor="@color/black"
+                    android:background="@color/mysin"
+                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Botón agregar al carrito
+        <Button
+            android:id="@+id/add_to_cart_button_pp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/instrument_price8"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/mysin"
+            android:padding="8dp"
+            android:text="Carrito de compras"
+            android:textColor="@color/silver"
+            android:textSize="28sp"
+            />
+            -->
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco2">
+
+    <!-- Logo y título -->
+
+    <ImageView
+        android:id="@+id/logo_image_view"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="320dp"
+        android:layout_height="62dp"
+        android:layout_alignTop="@id/logo_image_view"
+        android:layout_toEndOf="@id/logo_image_view"
+        android:layout_marginEnd="14dp"
+        android:background="@color/mysin"
+        android:padding="8dp"
+        android:text="Sinfonia de Viento"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:id="@+id/instrument_image"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_below="@id/title_text_view"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/instrument_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instrument_image"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="28dp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/instrument_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instrument_nombre"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+    <!-- Precio-->
+    <TextView
+        android:id="@+id/instrument_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instrument_description"
+        android:textColor="@color/silver"
+        android:textSize="24dp"
+        android:padding="8dp" />
+
+    <!-- Botón agregar al carrito -->
+    <Button
+        android:id="@+id/add_to_cart_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instrument_price"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/mysin"
+        android:padding="8dp"
+        android:text="Comprar"
+        android:textColor="@color/silver"
+        android:textSize="28sp" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="mysin">#FEAE49</color>
+    <color name="arsenico">#3D424A</color>
+    <color name="malibu">#57BEE6</color>
+    <color name="silver">#1E1E2A</color>
+    <color name="blanco2">#e6e5de</color>
+
+
+</resources>
